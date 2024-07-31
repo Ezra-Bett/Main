@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assign</title>
+
+    <style>
+
+        body{
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            background-image: url(img/bg.jpeg);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .main_div{
+            display: flex;
+            background-color: aliceblue;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 80%;
+            width: 80%;
+            margin-top: 10px;
+            margin-left: 150px;
+            margin-right: 150px;
+            border-radius: 10px;
+        }
+
+        .inner_div1{
+            display: flex;
+            background-image: url(img/bginner1.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 50%;
+            border-radius: 10px;
+        }
+
+        .inner_div2{
+            display: flex;
+            background-image: url(img/bginner2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: auto;
+            width: 100%;
+            border-radius: 10px;
+            margin: 25px;
+            flex-direction: column;
+            padding-top: 20px;
+            padding-left: 15px;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .image1{
+            height: 50%;
+            width: 50%;
+            padding-bottom: 10px;
+        }
+
+        .form{
+            height: 100%;
+            width: 50%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            color: black;
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-top: 10px;
+        }
+        .form1 input{
+            background-color: rgb(222, 225, 225);
+            border-radius: 13px;
+            box-sizing: border-box;
+            font-size: 15px;
+            width: 100%;
+            border: 1px solid rgb(144, 146, 144);
+            padding: 8px;
+            text-align: center;
+        }
+        .btn{
+            width: 100%;
+            background-color: rgb(34, 207, 34);
+            padding: 8px;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+       
+        .btn2{
+            width: 48%;
+            background-color: rgb(219, 223, 219);
+            padding: 8px;
+            border: none;
+            border-radius: 15px;
+            color: rgb(5, 5, 5);
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 10px;
+        }
+        .btn22{
+            float: right;
+            width: 48%;
+            background-color: rgb(219, 223, 219);
+            padding: 8px;
+            border: none;
+            border-radius: 15px;
+            color: rgb(5, 5, 5);
+            font-size: 15px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-bottom: 10px;
+        }
+        p{
+            text-align: center;
+        }
+        .btn0{
+            background-color: rgb(110, 111, 125);
+            width: 80px;
+            align-content: center;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 10px;
+            
+        }
+        .arrow_img{
+            width: 35px;
+            height: auto;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="main_div">
+
+        <div class="inner_div1">
+            <div class="inner_div2">
+                <button class="btn0"><img src="img/Arrow.png" class="arrow_img" alt=""></button>
+                Hi Welcome!
+                <h3>Let's Get Started</h3>
+                <p>
+                    Create free account and get free access of full features for 7 days. We invite you to join us and get better experience.
+                </p>
+                <img src="img/image1.png" alt="" class="image1">
+
+            </div>  
+        </div>
+
+        <div class="form">
+            <h2>Sign Up</h2>
+            <form action="#">
+
+                <div class="form1">
+                    <label for="name" id="name">Your Name</label>
+                    <input type="text">
+                </div>
+                <div class="form1">
+                    <label for="email" id="email">Your Email</label>
+                    <input type="email">
+                </div>
+                <div class="form1">
+                    <label for="password" id="password">Your Password</label>
+                    <input type="text">
+                </div>
+                <div>
+                    <input type="checkbox" id="remember_me">
+                    <label for="remember_me">Remember me</label>
+                </div>
+                <button type="submit" class="btn">Create account</button>
+                <p>Or</p>
+                <button class="btn2">Signup with Facebook</button>
+                <button class="btn22">Signup with Google</button>
+                <p>Already have an account? <a href="#">Login Here</a></p>
+            </form>
+
+        </div>
+
+    </div>
+
+    
+</body>
+</html>
